@@ -21,6 +21,9 @@ h1{
     text-align: center;
     padding-top: 20px;
 }
+h2{
+    font-size: 20px;
+}
 .img-perf{
     margin-top: 50px;
     margin-left: 20px;
@@ -93,7 +96,7 @@ h1{
     color: aliceblue;
 }
 #entrada-4{
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 footer{
     width: 100%;
@@ -108,4 +111,57 @@ footer{
     border-radius: 5px;
     width: 30px;
     height: 30px;
+}
+/*responsive para celulares*/
+@media  screen and (max-width:768px) {
+    .contenedor{
+        overflow: auto;
+    }
+    .img-perf{
+        width: 30%;
+        
+    }
+    .tex-intro{
+        float: left;
+        padding: 10px;
+    }
+   #entrada-1{
+       overflow:auto;
+       margin-bottom: 5%;
+   }
+    #video-presentacion{
+       float: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        
+    }
+    #video-presentacion iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .texto-compañia{
+        overflow:auto;
+    }
+    #doc-esc, #img-h {
+        padding:10px;
+        width:95%;
+    }
+    #entrada-3{
+        margin-bottom:5%;
+    }
+    .imagen-guerra{
+        position:relative;
+        width: 100%;
+    }
+    #entrada-4{
+        padding-bottom: 5%;
+    }
 }
